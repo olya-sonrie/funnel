@@ -1,0 +1,12 @@
+.email {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex-grow: 1;
+  height: 100%;
+  max-width: 450px;
+}
+
+.button {
+  height: 56px;
+}
