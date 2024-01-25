@@ -39,3 +39,5 @@ For the purity of the experiment, they should be equal, around 33.3% ⚖️. The
 After a certain period, depending on the amount of data, analytics or those responsible for the experiment will generate graphs 🎢 showing the number of users who visited the site and the number who completed it and landed on the main product 🖥️. In this case, the winning landing will be the one that was most interesting to users, i.e., where the number of users who transitioned to the product is higher 💯.
 
 Overall, if you dig deeper, there are many more details, but I described it from a simpler and more understandable perspective 🤓.
+
+Usefull [link 💡](http://localhost:3000) with free and open-source A/B testing tools
