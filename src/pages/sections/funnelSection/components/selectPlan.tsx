@@ -17,7 +17,7 @@ const SelectPlan: React.FC<SelectPlanProps> = ({ options }) => {
   return (
     <div className={styles['select-plan']}>
       <Title text={'Choose your plan'} />
-      <div style={{ marginBottom: 16, width: '100%' }}>
+      <div className={styles['radio-group']}>
         <RadioButton radioOptions={options} />
       </div>
       <Button className={styles.button} color="primary" variant="solid" fullWidth size="lg">

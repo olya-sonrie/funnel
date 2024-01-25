@@ -57,7 +57,16 @@
   }
 }
 
+.date {
+  font-weight: 700;
+}
+
 .line {
   height: 1px;
   background: rgba(0, 0, 0, 0.08);
+}
+
+.button {
+  height: 56px;
+  margin: 0 auto;
 }

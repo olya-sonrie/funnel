@@ -1,5 +1,5 @@
 import React from 'react'
-import { RadioProps, Badge } from '@nextui-org/react'
+import { Badge } from '@nextui-org/react'
 import styles from './RadioButton.module.scss'
 
 interface RadioButtonProps {
@@ -29,14 +29,19 @@ const RadioButton: React.FC<RadioButtonProps> = ({ radioOptions }) => {
                 <span className={styles.text}>{radio.topText}</span>
               )}
               <label
-                className={`${styles.radio} ${radio.topText ? styles.radio_border : ''}`}
+                className={`
+                  ${styles.radio} ${radio.topText ? styles.radio_border : ''}
+                  ${index + 1 === radioOptions.length ? styles.radio_margin : ''}
+                `}
                 htmlFor={`radioOption${radio.id}`}
               >
                 <span className={styles['radio-btn']}>
                   <span className={styles['radio-btn__circle']}></span>
                 </span>
                 <div className={styles.info}>
-                  <div style={{ fontWeight: 700 }}>{radio.description}</div>
+                  <div className={styles.description}>
+                    {radio.description}
+                  </div>
                   <div className={styles.price}>
                     <Badge
                       content="$"

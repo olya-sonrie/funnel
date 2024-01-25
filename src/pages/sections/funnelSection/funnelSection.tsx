@@ -1,5 +1,4 @@
-import React, { useState } from 'react'
-import { Button, RadioGroup } from '@nextui-org/react'
+import React from 'react'
 import styles from './FunnelSection.module.scss'
 import SelectPlan from './components/selectPlan'
 import Title from '@/pages/components/title/title'
@@ -103,22 +102,22 @@ const ProgressSection: React.FC = () => {
   return (
     <>
       <div>
-        <div style={{ marginBottom: 48 }}>
+        <div className={styles.margin}>
           <SelectPlan options={topOptions} />
         </div>
         <Title text={'Users love App!'} />
-        <div style={{ marginBottom: 48 }}>
+        <div className={styles.margin}>
           <FeedbackCard usersFeedback={feedback} />
         </div>
         <Title text={'What you get'} />
-        <div style={{ marginBottom: 48 }}>
+        <div className={styles.margin}>
           <InfoCard items={cardItemsIcon} animate={false} />
         </div>
         <Title text={'People just like you achieved great results with App!'} />
-        <div style={{ marginBottom: 48 }}>
+        <div className={styles.margin}>
           <InfoCard items={cardItemsText} animate={false} />
         </div>
-        <div style={{ marginBottom: 24 }}>
+        <div className={styles.margin_small}>
           <SelectPlan options={bottomOptions} />
         </div>
       </div>

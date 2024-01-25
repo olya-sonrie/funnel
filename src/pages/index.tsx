@@ -16,11 +16,12 @@ interface SubmittedData {
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
 export default function Home() {
-  const [currentPage, setCurrentPage] = useState(1)
+  const [currentPage, setCurrentPage] = useState(2)
   const [userData, setUserData] = useState({
     username: '',
     email: '',
   })
+  const [initUserEmail, setInitUserEmail] = useState('placeholder')
 
   if (typeof window !== 'undefined') {
     const disableBack = () => {
@@ -41,7 +42,9 @@ export default function Home() {
       email: email,
     }
 
-    setUserData(data)
+    if (userData !== data) {
+      setUserData(data)
+    }
 
     if (currentPage === 2) {
       setCurrentPage(3)
@@ -70,7 +73,11 @@ export default function Home() {
   }
 
   const showFunnel = () => {
-    handleSubmit(userData)
+    if (initUserEmail !== userData.email) {
+      setInitUserEmail(userData.email)
+      handleSubmit(userData)
+    }
+
     setCurrentPage(4)
   }
 

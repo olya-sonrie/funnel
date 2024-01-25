@@ -1,4 +1,4 @@
-import { Button, Image } from '@nextui-org/react'
+import { Button } from '@nextui-org/react'
 import styles from './PlanSection.module.scss'
 import { Inter } from 'next/font/google'
 import Title from '@/pages/components/title/title'
@@ -20,7 +20,7 @@ const PlanSection: React.FC<PlanSectionProps> = ({ onClick }) => {
           <Title text={'See your Spiritual Growth progress by Sep 17, 2024'} />
           <div className={`${styles.chart} ${inter.className}`}>
             <div className={styles.chart__to}>
-              <span style={{ fontWeight: 700 }}>Sep 17</span> <br /> 2024
+              <span className={styles.date}>Sep 17</span> <br /> 2024
             </div>
             <div className={styles.chart__body}>
               {lines.map((_, index) => (
@@ -30,7 +30,7 @@ const PlanSection: React.FC<PlanSectionProps> = ({ onClick }) => {
             <div className={styles.chart__from}>Now</div>
           </div>
         </div>
-        <Button color="primary" variant="solid" fullWidth size="lg" style={{ margin: '0 auto' }} onClick={showNextPage}>
+        <Button className={styles.button} color="primary" variant="solid" fullWidth size="lg" onClick={showNextPage}>
           Continue
         </Button>
       </div>
