@@ -23,7 +23,7 @@ const FeedbackCard: React.FC<FeedbackCardProps> = ({ usersFeedback }) => {
     <div className={styles.card}>
       {usersFeedback &&
         usersFeedback.map((feedback, indx) => (
-          <Card key={indx} className="p-3" style={{ marginBottom: 12 }}>
+          <Card key={indx} className={styles.spaces}>
             <CardHeader className={styles.card__header}>
               <div className="flex items-center justify-between w-full">
                 <p className={styles.name}>{feedback.name}</p>
@@ -43,7 +43,7 @@ const FeedbackCard: React.FC<FeedbackCardProps> = ({ usersFeedback }) => {
               <small className={styles.date}>{feedback.date}</small>
             </CardHeader>
             <CardBody className="p-0">
-              <p className={`${styles.text} ${styles['truncate-overflow']}`}>{feedback.text}</p>
+              <p className={styles.text}>{feedback.text}</p>
             </CardBody>
           </Card>
         ))}

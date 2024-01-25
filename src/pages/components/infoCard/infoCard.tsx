@@ -63,7 +63,7 @@ const InfoCard: React.FC<InfoCardProps> = ({ items, animate }) => {
                 {item.percentage}
               </div>
             )}
-            <p style={{ marginLeft: 12 }}>{item.text}</p>
+            <p className={styles.text}>{item.text}</p>
           </div>
         ))}
     </div>
