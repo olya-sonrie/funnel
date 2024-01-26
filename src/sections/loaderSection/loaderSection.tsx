@@ -3,7 +3,7 @@ import styles from './LoaderSection.module.scss'
 import { Lora } from 'next/font/google'
 import { CircularProgressbar } from 'react-circular-progressbar'
 import 'react-circular-progressbar/dist/styles.css'
-import { Title, InfoCard } from '@/pages/components'
+import { Title, InfoCard } from '@/components'
 
 const lora = Lora({ subsets: ['latin'] })
 
