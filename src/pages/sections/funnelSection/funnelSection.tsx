@@ -1,9 +1,7 @@
 import React from 'react'
 import styles from './FunnelSection.module.scss'
 import SelectPlan from './components/selectPlan'
-import Title from '@/pages/components/title/title'
-import FeedbackCard from '@/pages/components/feedbackCard/feedbackCard'
-import InfoCard from '@/pages/components/infoCard/infoCard'
+import { Title, FeedbackCard, InfoCard } from '@/pages/components'
 
 const ProgressSection: React.FC = () => {
   const feedback = [

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Button, Input } from '@nextui-org/react'
 import styles from './EmailSection.module.scss'
-import Title from '@/pages/components/title/title'
+import { Title } from '@/pages/components'
 
 interface LoaderSectionProps {
   email: string
