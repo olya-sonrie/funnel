@@ -1,7 +1,7 @@
 import { Button } from '@nextui-org/react'
 import styles from './PlanSection.module.scss'
 import { Inter } from 'next/font/google'
-import { Title } from '@/pages/components'
+import { Title } from '@/components'
 
 const inter = Inter({ subsets: ['latin'] })
 

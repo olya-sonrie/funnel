@@ -2,8 +2,8 @@ import { useState } from 'react'
 import Head from 'next/head'
 import styles from '@/styles/Home.module.scss'
 import { Plus_Jakarta_Sans } from 'next/font/google'
-import { Header } from './components'
-import { LoaderSection, EmailSection, PlanSection, FunnelSection } from './sections'
+import { Header } from '@/components'
+import { LoaderSection, EmailSection, PlanSection, FunnelSection } from '@/sections'
 
 interface SubmittedData {
   username: string

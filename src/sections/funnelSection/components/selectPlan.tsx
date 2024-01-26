@@ -1,8 +1,8 @@
 import React from 'react'
 import { Button } from '@nextui-org/react'
 import styles from './SelectPlan.module.scss'
-import Title from '@/pages/components/title/title'
-import RadioButton from '@/pages/components/radioButton/radioButton'
+import Title from '@/components/title/title'
+import RadioButton from '@/components/radioButton/radioButton'
 
 interface SelectPlanProps {
   options: {
