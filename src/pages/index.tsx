@@ -2,11 +2,8 @@ import { useState } from 'react'
 import Head from 'next/head'
 import styles from '@/styles/Home.module.scss'
 import { Plus_Jakarta_Sans } from 'next/font/google'
-import Header from './components/header/header'
-import LoaderSection from './sections/loaderSection/loaderSection'
-import EmailSection from './sections/emailSection/emailSection'
-import PlanSection from './sections/planSection/planSection'
-import FunnelSection from './sections/funnelSection/funnelSection'
+import { Header } from './components'
+import { LoaderSection, EmailSection, PlanSection, FunnelSection } from './sections'
 
 interface SubmittedData {
   username: string
@@ -16,7 +13,7 @@ interface SubmittedData {
 const jakarta = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
 export default function Home() {
-  const [currentPage, setCurrentPage] = useState(2)
+  const [currentPage, setCurrentPage] = useState(1)
   const [userData, setUserData] = useState({
     username: '',
     email: '',
